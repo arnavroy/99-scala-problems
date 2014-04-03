@@ -1,3 +1,5 @@
 # sbt specific.
 target/
-./project/
+
+# vim specific.
+*.swp
