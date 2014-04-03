@@ -9,8 +9,8 @@ package src.main.scala
 
 object P01 {
   def last[T](l: List[T]): T = l match {
-      case Nil => throw new NoSuchElementException
-      case x::Nil => x
-      case x::xs => last(xs)
-  } 
+    case Nil => throw new NoSuchElementException
+    case x::Nil => x
+    case x::xs => last(xs)
+  }
 }
