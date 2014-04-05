@@ -10,15 +10,19 @@ package src.main.scala
 
 object P03 {
   def kth[T](k: Int, l: List[T]): T = {
-    if (k < 0 || l.length <= k) 
+    if (k < 0 || l.length <= k) {
       throw new NoSuchElementException
-    else
+    } else {
       l match {
         case x::xs => {
-          if (k == 0) return x
-          else return kth(k - 1, xs)
+          if (k == 0) {
+            x
+          } else {
+            kth(k - 1, xs)
+          }
         }
         case Nil => throw new NoSuchElementException
-      } 
+      }
+    }
   }
 }
