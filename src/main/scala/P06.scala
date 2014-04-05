@@ -9,7 +9,7 @@ package src.main.scala
 
 object P06 {
   def isPalindrome[T](l: List[T]): Boolean = l match {
-    case Nil => true 
+    case Nil => true
     case x::Nil => true
     case x::xs => (x == xs.last) && isPalindrome(xs.init)
   }
